@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/address-book-logo.png" alt="logo">
+            <div>
+                <span class="address-text">ADDRESS</span>
+                <span class="address-text book-text">BOOK</span>            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="form-header-content">
+            <div class="person-detail-text">
+                Person Details
+            </div>
+            <div class="header-button">
+                <a href="addPerson.html" class="add-button">
+                <img src="../assets/icons/add-24px.svg" alt="+">Add Person</a>
+            </div>            
+        </div>
+        <table id="table-display" class="table">
+            <tr>
+                <th></th>
+                <th>Full Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip Code</th>
+                <th>Phone Number</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Narayan Mahadevan</td>
+                <td>Marve road, Next to Maniratna,Malad(west)</td>
+                <td>Mumbai</td>
+                <td>Maharashtra</td>
+                <td>400064</td>
+                <td>+919900990099</td>
+                <td>
+                    <img id="1" onclick="remove(this)" src="../assets/icons/delete-black-18dp.svg" alt="delete">
+                    <img id="1" onclick="update(this)" src="../assets/icons/create-black-18dp.svg" alt="edit">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script defer src="../js/home.js"></script>
+</body>
+</html>
